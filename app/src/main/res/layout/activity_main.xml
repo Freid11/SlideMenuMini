@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <porter.medsafe.com.menuformedsafedoctor.MySlidingPane
+        android:id="@+id/spl_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fr_1"
+            android:name="porter.medsafe.com.menuformedsafedoctor.FragmentLeftMenu"
+            android:layout_width="220dp"
+            android:layout_height="match_parent" />
+
+        <porter.medsafe.com.menuformedsafedoctor.MySlidingPane
+            android:id="@+id/spl_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_marginLeft="56dp" >
+
+            <fragment
+                android:id="@+id/fr_3"
+                android:name="porter.medsafe.com.menuformedsafedoctor.FragmentRightMenu"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="56dp" />
+            <fragment
+                android:id="@+id/fr_2"
+                android:name="porter.medsafe.com.menuformedsafedoctor.FragmentCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="56dp" />
+
+        </porter.medsafe.com.menuformedsafedoctor.MySlidingPane>
+
+    </porter.medsafe.com.menuformedsafedoctor.MySlidingPane>
+</RelativeLayout>
